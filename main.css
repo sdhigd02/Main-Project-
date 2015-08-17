@@ -14,11 +14,12 @@ h1 {
 } 
 
 a:link {    
-    color: black;
+    color: darkorange;
+    text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: darkorange;
 }
 
 a:hover {
@@ -35,7 +36,13 @@ ul {
 
 nav li {
     display: inline;
-    padding: 5%  
+    padding-left:2%;
+    padding-right:2%;
+    border: 3px solid darkorange;
+    background-color: black;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 nav {
@@ -141,13 +148,14 @@ h2 {
     text-align: center;
 }
 
-.mission {
-    text-align: center;
+.missioncontent {
     list-style-position: inside;
+    text-align:center;
 }
 
 .mission h3 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .random {
@@ -167,3 +175,25 @@ box-shadow: 15px 15px 10px black;
 .pictures {
     font-size: 20px;
 }
+
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:fixed!important;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+ margin-top: 10%; 
+}
+
+#overlay p {
+ color:white; 
+}
+
+
+
