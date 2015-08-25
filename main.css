@@ -47,7 +47,7 @@ nav li {
 
 nav {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 70px;
 }
 
@@ -95,6 +95,11 @@ footer {
     display: inline-block;
     padding: 10px;
     font-size: 1em;
+}
+
+.pictures p{
+    margin-top: 25%;
+    text-align: center;
 }
 
 .volunteers {
@@ -150,22 +155,16 @@ h2 {
 
 .missioncontent {
     list-style-position: inside;
-    text-align:center;
+    text-align: center;
 }
 
 .mission h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.random {
-float:left;
-border: black;
-box-shadow: 15px 15px 10px black;
-}
-
 .about h3 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .about {
@@ -195,5 +194,157 @@ box-shadow: 15px 15px 10px black;
  color:white; 
 }
 
+.selected{
+color: white;
+}
+
+select {
+ border: 3px solid darkorange;
+    background-color: orange;
+    border-radius: 25px;
+    color: black;
+    font-size: .75em;
+    text-align: center;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 40px;
+  background: black;
+  border-radius: 8px;
+color: orange;
+}
+
+form h1 {
+  font-size: 1em; 
+  text-align: center;
+color: black;
+    background-color: darkorange;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+form select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+#job {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+form button {
+  padding: 19px 39px 18px 39px;
+  color: black;
+  background-color: darkorange;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid white;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
 
 
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+@media (min-width: 0px) and (max-width: 750px) {
+  .menu ul {
+    display:none;
+  }
+    .volunteers img {
+        width: 50%;
+        height: 50%;    
+    }
+    
+    h1 {
+        font-size: 1.75em;
+    }
+    .logo {
+        height: 1.75em;
+        width:10%;
+    }
+    .pictures {
+       align-content: center;
+        float: none;    
+    }
+    .pictures img {
+        width: 100%;
+         height:100%;
+        margin-top: 10%;
+        align-content: center;
+    }
+    .rightfont, .leftfont {
+    float: none;
+    }
+    ,group, #children {
+    float: none;
+    align-content: center;
+    }
+    .leftside {
+        width: 50%;
+        height: 50%;
+        align-content: center;
+        clear: none; 
+       display: block;
+    }
+    .rightside{
+        width:65%;
+        height:65%;
+        clear: none;
+        display: block;
+    }
+    #children {
+    margin-bottom: 20%;
+    }
+}
+
+@media (min-width: 750px) {
+  .menu select, .menu button {
+    display:none;
+  }
+}
+  
